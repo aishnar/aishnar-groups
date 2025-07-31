@@ -1,0 +1,2678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AishNar Group - Turning Ideas into Ventures | Digital Solutions, Fashion, Skills & Security</title>
+    <meta name="description"
+        content="AishNar Group transforms bold ideas into thriving ventures. Explore AishNar Digital for SEO, branding, mobile development. Coming soon: AishNar Clothing, Skills & Security.">
+    <meta name="keywords"
+        content="AishNar Group, digital solutions, SEO services, branding, mobile development, social media marketing, content strategy, fashion brand, skills training, cybersecurity">
+    <meta name="author" content="AishNar Groups">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aishnar.com">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AishNar Group - Turning Ideas into Ventures">
+    <meta property="og:description"
+        content="Building the future through innovative ventures. From digital solutions to fashion, skills, and security - we turn bold ideas into reality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aishnar.com">
+    <meta property="og:image" content="https://aishnar.com/aishnarlogo1.png">
+    <meta property="og:site_name" content="AishNar Groups">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@aishnar_IN">
+    <meta name="twitter:title" content="AishNar Group - Turning Ideas into Ventures">
+    <meta name="twitter:description"
+        content="Building the future through innovative ventures. Digital solutions, fashion, skills, and security.">
+    <meta name="twitter:image" content="https://aishnar.com/aishnarlogo1.png">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#6366F1">
+    <meta name="msapplication-TileColor" content="#6366F1">
+    <link rel="icon" type="image/png" href="aishnarlogo1.png">
+    <link rel="apple-touch-icon" href="aishnarlogo1.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A0E27',
+                        secondary: '#1A1F3A',
+                        accent: '#6366F1',
+                        'accent-light': '#818CF8',
+                        'accent-dark': '#4F46E5',
+                        gold: '#F59E0B',
+                        'gold-light': '#FCD34D',
+                        surface: '#151937',
+                        'surface-light': '#1E2347'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AishNar Groups",
+        "description": "Building the future through innovative ventures. From digital solutions to fashion, skills, and security - we turn bold ideas into reality.",
+        "url": "https://aishnar.com",
+        "logo": "https://aishnar.com/aishnarlogo1.png",
+        "foundingDate": "2024",
+        "founders": [
+            {
+                "@type": "Person",
+                "name": "Aishwary",
+                "jobTitle": "Tech & Creative Lead"
+            },
+            {
+                "@type": "Person", 
+                "name": "Narender",
+                "jobTitle": "Strategy & Digital Growth Lead"
+            }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/Aishnar_groups",
+            "https://x.com/aishnar_IN"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "aishnar.official@gmail.com",
+            "contactType": "customer service"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+        }
+    }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0A0E27 0%, #1A1F3A 50%, #151937 100%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0A0E27 0%, #1A1F3A 30%, #151937 70%, #0A0E27 100%);
+        }
+
+        .glass-effect {
+            background: rgba(21, 25, 55, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .hero-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(161, 209, 177, 0.2);
+        }
+
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-8px);
+            }
+
+            60% {
+                transform: translateY(-4px);
+            }
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #A1D1B1;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        .hamburger-line {
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .hamburger.open .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.open .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.open .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Mobile-first responsive design */
+        .responsive-text-sm {
+            font-size: 0.875rem;
+        }
+
+        .responsive-text-base {
+            font-size: 1rem;
+        }
+
+        .responsive-text-lg {
+            font-size: 1.125rem;
+        }
+
+        .responsive-text-xl {
+            font-size: 1.25rem;
+        }
+
+        .responsive-text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .responsive-text-3xl {
+            font-size: 1.875rem;
+        }
+
+        .responsive-text-4xl {
+            font-size: 2.25rem;
+        }
+
+        @media (min-width: 640px) {
+            .responsive-text-sm {
+                font-size: 1rem;
+            }
+
+            .responsive-text-base {
+                font-size: 1.125rem;
+            }
+
+            .responsive-text-lg {
+                font-size: 1.25rem;
+            }
+
+            .responsive-text-xl {
+                font-size: 1.5rem;
+            }
+
+            .responsive-text-2xl {
+                font-size: 1.875rem;
+            }
+
+            .responsive-text-3xl {
+                font-size: 2.25rem;
+            }
+
+            .responsive-text-4xl {
+                font-size: 3rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .responsive-text-sm {
+                font-size: 1rem;
+            }
+
+            .responsive-text-base {
+                font-size: 1.125rem;
+            }
+
+            .responsive-text-lg {
+                font-size: 1.375rem;
+            }
+
+            .responsive-text-xl {
+                font-size: 1.75rem;
+            }
+
+            .responsive-text-2xl {
+                font-size: 2.25rem;
+            }
+
+            .responsive-text-3xl {
+                font-size: 2.75rem;
+            }
+
+            .responsive-text-4xl {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .responsive-text-sm {
+                font-size: 1.125rem;
+            }
+
+            .responsive-text-base {
+                font-size: 1.25rem;
+            }
+
+            .responsive-text-lg {
+                font-size: 1.5rem;
+            }
+
+            .responsive-text-xl {
+                font-size: 2rem;
+            }
+
+            .responsive-text-2xl {
+                font-size: 2.5rem;
+            }
+
+            .responsive-text-3xl {
+                font-size: 3rem;
+            }
+
+            .responsive-text-4xl {
+                font-size: 4rem;
+            }
+        }
+
+        /* Button animations */
+        .btn-primary {
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #818CF8 0%, #6366F1 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            border: 2px solid #6366F1;
+            color: #6366F1;
+            transition: all 0.3s ease;
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        }
+
+        /* Form styles */
+        .form-input {
+            background-color: #1E2347;
+            border: 1px solid #374151;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            border-color: #6366F1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+            outline: none;
+            background-color: #151937;
+        }
+
+        /* Unique menu animations */
+        .menu-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .menu-item:hover::before {
+            left: 100%;
+        }
+
+        /* Floating particles animation */
+        .floating-particle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float-particle 6s infinite ease-in-out;
+        }
+
+        @keyframes float-particle {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+                opacity: 1;
+            }
+        }
+
+        /* Glowing text effect */
+        .glow-text {
+            text-shadow: 0 0 10px rgba(99, 102, 241, 0.5), 0 0 20px rgba(99, 102, 241, 0.3), 0 0 30px rgba(99, 102, 241, 0.2);
+        }
+
+        /* Animated border */
+        .animated-border {
+            position: relative;
+            background: linear-gradient(45deg, #0A0E27, #1A1F3A);
+        }
+
+        .animated-border::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(45deg, #6366F1, #F59E0B, #6366F1);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            animation: border-rotate 3s linear infinite;
+        }
+
+        @keyframes border-rotate {
+            0% {
+                background: linear-gradient(45deg, #6366F1, #F59E0B, #6366F1);
+            }
+
+            33% {
+                background: linear-gradient(45deg, #F59E0B, #6366F1, #F59E0B);
+            }
+
+            66% {
+                background: linear-gradient(45deg, #6366F1, #F59E0B, #6366F1);
+            }
+
+            100% {
+                background: linear-gradient(45deg, #F59E0B, #6366F1, #F59E0B);
+            }
+        }
+
+        /* Utility Styles */
+        .mt-16 {
+            margin-top: 4rem;
+        }
+
+        .sm\:mt-20 {
+            margin-top: 5rem;
+        }
+
+        .p-8 {
+            padding: 2rem;
+        }
+
+        .sm\:p-10 {
+            padding: 2.5rem;
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .sm\:text-3xl {
+            font-size: 1.875rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .text-gray-300 {
+            color: #d1d5db;
+        }
+
+        .text-highlight {
+            color: #fbbf24;
+        }
+
+        /* Customize highlight color */
+        .btn-highlight {
+            background-color: #fbbf24;
+            color: #1f2937;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-highlight:hover {
+            background-color: #f59e0b;
+        }
+
+        /* Flex and Grid */
+        .flex {
+            display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .md\:flex-row {
+            flex-direction: row;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-8 {
+            gap: 2rem;
+        }
+
+        .md\:w-1\/2 {
+            width: 50%;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        /* Hexagon Container */
+        .hexagon {
+            clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+            background: linear-gradient(to bottom right, rgba(251, 191, 36, 0.2), rgba(236, 72, 153, 0.2));
+            /* Accent to Highlight */
+            color: #fff;
+            text-align: center;
+        }
+
+        .w-64 {
+            width: 16rem;
+        }
+
+        .h-64 {
+            height: 16rem;
+        }
+
+        .sm\:w-72 {
+            width: 18rem;
+        }
+
+        .sm\:h-72 {
+            height: 18rem;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        /* Notification Badge */
+        .absolute {
+            position: absolute;
+        }
+
+        .-top-3 {
+            top: -0.75rem;
+        }
+
+        .-right-3 {
+            right: -0.75rem;
+        }
+
+        .w-8 {
+            width: 2rem;
+        }
+
+        .h-8 {
+            height: 2rem;
+        }
+
+        .rounded-full {
+            border-radius: 9999px;
+        }
+
+        .bg-highlight {
+            background-color: #fbbf24;
+        }
+
+        /* Match your brand color */
+        .text-sm {
+            font-size: 0.875rem;
+        }
+
+        /* Glass Effect */
+        .glass-effect {
+            backdrop-filter: blur(16px);
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Section Fade Animation */
+        .section-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Typography (Optional if using Tailwind) */
+        @media (min-width: 640px) {
+            .sm\:text-3xl {
+                font-size: 1.875rem;
+            }
+
+            .sm\:p-10 {
+                padding: 2.5rem;
+            }
+
+            .sm\:w-72 {
+                width: 18rem;
+            }
+
+            .sm\:h-72 {
+                height: 18rem;
+            }
+
+            .sm\:mt-20 {
+                margin-top: 5rem;
+            }
+        }
+
+        /* === ENHANCEMENTS START === */
+
+        /* Stronger gradient backgrounds */
+        .gradient-bg {
+            background: linear-gradient(135deg, #0A0E27 0%, #1C1F4A 50%, #0D122C 100%);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0A0E27 0%, #222653 30%, #0D122C 70%, #0A0E27 100%);
+        }
+
+        /* Bolder glass effect */
+        .glass-effect {
+            background: rgba(21, 25, 55, 0.85);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+        }
+
+        /* Enhanced glow-text */
+        .glow-text {
+            text-shadow: 0 0 12px rgba(99, 102, 241, 0.7),
+                0 0 25px rgba(99, 102, 241, 0.4),
+                0 0 35px rgba(99, 102, 241, 0.3);
+            color: #C7D2FE;
+        }
+
+        /* Improved card-hover */
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(161, 209, 177, 0.25);
+        }
+
+        /* More dynamic bounce */
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-12px);
+            }
+
+            60% {
+                transform: translateY(-6px);
+            }
+        }
+
+        /* Animated-border enhancement */
+        .animated-border::before {
+            animation: border-rotate 4s linear infinite;
+            border-radius: inherit;
+            opacity: 0.9;
+        }
+
+        /* Accent for hover underlines */
+        .nav-link::after {
+            background-color: #F59E0B;
+            /* More vibrant highlight */
+        }
+
+        /* Buttons refinement */
+        .btn-primary {
+            box-shadow: 0 5px 18px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-gold {
+            box-shadow: 0 5px 18px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-gold:hover {
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.5);
+        }
+
+        .btn-highlight {
+            background-color: #FACC15;
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        .btn-highlight:hover {
+            background-color: #F59E0B;
+            transform: scale(1.05);
+        }
+
+        /* Floating particles: added variety */
+        @keyframes float-particle {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(360deg) scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        /* New hover shine effect for cards or containers */
+        .card-hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.2) 100%);
+            transform: skewX(-20deg);
+            transition: all 0.75s ease;
+            pointer-events: none;
+        }
+
+        .card-hover:hover::before {
+            left: 125%;
+        }
+
+        /* Hexagon shine */
+        .hexagon {
+            box-shadow: 0 0 15px rgba(251, 191, 36, 0.15);
+        }
+
+        /* Better fade animation */
+        .section-fade {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* Border animation enhancement */
+        @keyframes border-rotate {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Notification badge glow */
+        .bg-highlight {
+            box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+        }
+
+        /* === ENHANCEMENTS END === */
+    </style>
+</head>
+
+<body class="text-white overflow-x-hidden" style="background-color: #0A0E27;">
+    <!-- Navigation -->
+    <header>
+        <nav class="fixed top-0 w-full z-50 glass-effect border-b border-accent/20"
+            style="background: rgba(10, 14, 39, 0.95); backdrop-filter: blur(20px);" role="navigation"
+            aria-label="Main navigation">
+            <!-- Floating particles in nav -->
+            <div class="floating-particle w-2 h-2 bg-accent/30 top-2 left-1/4" style="animation-delay: 0s;"></div>
+            <div class="floating-particle w-1 h-1 bg-gold/40 top-4 right-1/3" style="animation-delay: 2s;"></div>
+            <div class="floating-particle w-1.5 h-1.5 bg-accent-light/20 top-3 left-2/3" style="animation-delay: 4s;">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <!-- Logo with animated border -->
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="animated-border w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center overflow-hidden">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center p-0.5">
+                                <img src="https://aishnar.ct.ws/aishnarlogo1.png" alt="AishNar Logo"
+                                    class="w-full h-full object-cover rounded-full scale-125 hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="w-full h-full bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center font-bold text-lg sm:text-xl text-white hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                    style="display: none;">
+                                    A
+                                </div>
+                            </div>
+                        </div>
+                        <span class="responsive-text-xl font-bold text-white glow-text">AishNar Groups</span>
+                    </div>
+
+                    <!-- Desktop Navigation - Shows on tablet and larger screens (768px+) -->
+                    <div class="hidden md:flex items-center space-x-2">
+                        <a href="#home"
+                            class="menu-item nav-link text-white hover:text-accent px-5 py-3 rounded-lg transition-all duration-300 hover:bg-accent/10 font-medium text-lg relative group"
+                            aria-label="Go to Home section">
+                            <span class="relative z-10">Home</span>
+                            <div
+                                class="absolute inset-0 bg-accent/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </a>
+                        <a href="#about"
+                            class="menu-item nav-link text-white hover:text-accent px-5 py-3 rounded-lg transition-all duration-300 hover:bg-accent/10 font-medium text-lg relative group"
+                            aria-label="Go to About section">
+                            <span class="relative z-10">About</span>
+                            <div
+                                class="absolute inset-0 bg-accent/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </a>
+                        <a href="#ventures"
+                            class="menu-item nav-link text-white hover:text-accent px-5 py-3 rounded-lg transition-all duration-300 hover:bg-accent/10 font-medium text-lg relative group"
+                            aria-label="Go to Ventures section">
+                            <span class="relative z-10">Ventures</span>
+                            <div
+                                class="absolute inset-0 bg-accent/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </a>
+                        <a href="https://aishnargroups.ct.ws/ai-report-summary/index.html" target="_blank"
+                            class="menu-item nav-link text-white hover:text-accent px-5 py-3 rounded-lg transition-all duration-300 hover:bg-accent/10 font-medium text-lg relative group"
+                            aria-label="Go to Reports page">
+                            <span class="relative z-10">Reports</span>
+                            <div
+                                class="absolute inset-0 bg-accent/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </a>
+
+                        <a href="#connect"
+                            class="menu-item nav-link text-white hover:text-accent px-5 py-3 rounded-lg transition-all duration-300 hover:bg-accent/10 font-medium text-lg relative group"
+                            aria-label="Go to Contact section">
+                            <span class="relative z-10">Contact</span>
+                            <div
+                                class="absolute inset-0 bg-accent/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button - Shows on mobile only (below 768px) -->
+                    <button id="mobile-menu-button"
+                        class="md:hidden p-3 rounded-xl text-white hover:text-accent hover:bg-accent/20 focus:outline-none focus:ring-2 focus:ring-accent transition-all duration-300 border border-accent/30">
+                        <div class="hamburger w-6 h-6 flex flex-col justify-center items-center space-y-1">
+                            <span class="hamburger-line block w-5 h-0.5 bg-current rounded-full"></span>
+                            <span class="hamburger-line block w-5 h-0.5 bg-current rounded-full"></span>
+                            <span class="hamburger-line block w-5 h-0.5 bg-current rounded-full"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Side Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 z-50 w-80 shadow-xl md:hidden glass-effect">
+        <!-- Floating particles in mobile menu -->
+        <div class="floating-particle w-3 h-3 bg-accent/20 top-20 left-10" style="animation-delay: 1s;"></div>
+        <div class="floating-particle w-2 h-2 bg-gold/30 top-40 right-16" style="animation-delay: 3s;"></div>
+        <div class="floating-particle w-1.5 h-1.5 bg-accent-light/25 top-60 left-20" style="animation-delay: 5s;"></div>
+
+        <div class="flex flex-col h-full">
+            <!-- Menu Header -->
+            <div class="flex items-center justify-between p-6 border-b border-accent/20">
+                <div class="flex items-center space-x-3">
+                    <div class="animated-border w-8 h-8 rounded-full flex items-center justify-center overflow-hidden">
+                        <div
+                            class="w-full h-full bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center p-0.5">
+                            <img src="aishnarlogo1.png" alt="AishNar Logo"
+                                class="w-full h-full object-cover rounded-full scale-125 hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="w-full h-full bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center font-bold text-lg text-white hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                style="display: none;">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-xl font-bold text-white glow-text">AishNar Groups</span>
+                </div>
+                <button id="close-menu"
+                    class="p-2 rounded-xl text-gray-400 hover:text-white hover:bg-accent/20 transition-all duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="flex-1 px-6 py-8">
+                <nav class="space-y-4">
+                    <a href="#home"
+                        class="mobile-nav-link menu-item flex items-center space-x-4 responsive-text-lg font-medium text-gray-300 hover:text-white hover:bg-accent/10 px-4 py-4 rounded-xl transition-all duration-300 group">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-accent/20 to-accent/10 rounded-lg flex items-center justify-center group-hover:from-accent group-hover:to-accent-dark transition-all duration-300">
+                            <svg class="w-5 h-5 text-accent group-hover:text-white" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="group-hover:translate-x-1 transition-transform duration-300">Home</span>
+                    </a>
+                    <a href="#about"
+                        class="mobile-nav-link menu-item flex items-center space-x-4 responsive-text-lg font-medium text-gray-300 hover:text-white hover:bg-accent/10 px-4 py-4 rounded-xl transition-all duration-300 group">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-gold/20 to-gold/10 rounded-lg flex items-center justify-center group-hover:from-gold group-hover:to-gold-light transition-all duration-300">
+                            <svg class="w-5 h-5 text-gold group-hover:text-white" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <span class="group-hover:translate-x-1 transition-transform duration-300">About</span>
+                    </a>
+                    <a href="#ventures"
+                        class="mobile-nav-link menu-item flex items-center space-x-4 responsive-text-lg font-medium text-gray-300 hover:text-white hover:bg-accent/10 px-4 py-4 rounded-xl transition-all duration-300 group">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-accent-light/20 to-accent-light/10 rounded-lg flex items-center justify-center group-hover:from-accent-light group-hover:to-accent transition-all duration-300">
+                            <svg class="w-5 h-5 text-accent-light group-hover:text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="group-hover:translate-x-1 transition-transform duration-300">Ventures</span>
+                    </a>
+                    <a href="https://aishnargroups.ct.ws/ai-report-summary/index.html" target="_blank"
+                        class="mobile-nav-link menu-item flex items-center space-x-4 responsive-text-lg font-medium text-gray-300 hover:text-white hover:bg-accent/10 px-4 py-4 rounded-xl transition-all duration-300 group">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-accent-dark/20 to-accent-dark/10 rounded-lg flex items-center justify-center group-hover:from-accent-dark group-hover:to-accent transition-all duration-300">
+                            <svg class="w-5 h-5 text-accent-dark group-hover:text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="group-hover:translate-x-1 transition-transform duration-300">Reports</span>
+                    </a>
+
+                    <a href="#connect"
+                        class="mobile-nav-link menu-item flex items-center space-x-4 responsive-text-lg font-medium text-gray-300 hover:text-white hover:bg-accent/10 px-4 py-4 rounded-xl transition-all duration-300 group">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-accent-dark/20 to-accent-dark/10 rounded-lg flex items-center justify-center group-hover:from-accent-dark group-hover:to-accent transition-all duration-300">
+                            <svg class="w-5 h-5 text-accent-dark group-hover:text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="group-hover:translate-x-1 transition-transform duration-300">Contact</span>
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Menu Footer -->
+            <div class="p-6 border-t" style="border-color: rgba(161, 209, 177, 0.2);">
+                <div class="space-y-4">
+                    <p class="text-sm text-gray-400">Follow us</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/Aishnar_groups" target="_blank"
+                            class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/aishnar_IN" target="_blank"
+                            class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:aishnar.official@gmail.com"
+                            class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden hidden"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home"
+            class="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden pt-16">
+            <!-- Enhanced background elements -->
+            <div class="absolute inset-0 opacity-20">
+                <div class="absolute top-1/4 left-1/4 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 rounded-full mix-blend-multiply filter blur-xl animate-pulse"
+                    style="background: linear-gradient(45deg, #6366F1, #818CF8);"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 rounded-full mix-blend-multiply filter blur-xl animate-pulse"
+                    style="background: linear-gradient(45deg, #F59E0B, #FCD34D);"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-32 sm:h-32 lg:w-48 lg:h-48 rounded-full mix-blend-multiply filter blur-2xl animate-pulse"
+                    style="background: linear-gradient(45deg, #818CF8, #F59E0B);"></div>
+            </div>
+
+            <!-- Floating particles -->
+            <div class="floating-particle w-4 h-4 bg-accent/30 top-20 left-1/4" style="animation-delay: 0s;"></div>
+            <div class="floating-particle w-3 h-3 bg-gold/40 top-32 right-1/3" style="animation-delay: 2s;"></div>
+            <div class="floating-particle w-2 h-2 bg-accent-light/50 bottom-32 left-1/3" style="animation-delay: 4s;">
+            </div>
+            <div class="floating-particle w-3 h-3 bg-gold/30 bottom-20 right-1/4" style="animation-delay: 6s;"></div>
+
+            <div class="text-center z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="hero-animation mb-6 sm:mb-8">
+                    <div
+                        class="animated-border w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 overflow-hidden">
+                        <div
+                            class="w-full h-full bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center p-1">
+                            <img src="aishnarlogo1.png" alt="AishNar Logo"
+                                class="w-full h-full object-cover rounded-full scale-150 hover:scale-175 transition-transform duration-700 hover:rotate-12 animate-pulse"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="w-full h-full bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center font-bold responsive-text-2xl text-white hover:scale-175 transition-transform duration-700 hover:rotate-12 animate-pulse"
+                                style="display: none;">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="responsive-text-4xl font-black mb-4 sm:mb-6 text-white glow-text">
+                        AishNar Groups
+                    </h1>
+                </div>
+
+                <p class="responsive-text-xl font-light mb-6 sm:mb-8 text-gray-300">
+                    Turning Ideas into Ventures
+                </p>
+
+                <p class="responsive-text-base mb-8 sm:mb-12 text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                    AishNar Groups isn't just a company. We're the vision behind future-defining ventures.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16">
+                    <button id="explore-digital-btn"
+                        class="btn-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold responsive-text-base">
+                        Explore AishNar Digital
+                    </button>
+                    <button id="mission-btn"
+                        class="btn-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold responsive-text-base">
+                        Our Mission
+                    </button>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="w-6 h-10 border-2 border-accent rounded-full mx-auto mb-4 relative">
+                        <div class="w-1 h-3 bg-accent rounded-full mx-auto mt-2 animate-bounce"></div>
+                    </div>
+                    <p class="text-xs sm:text-sm text-accent mt-2 glow-text">Start exploring</p>
+                </div>
+            </div>
+
+            <!-- Scroll Progress Bar -->
+            <div id="scroll-progress"
+                class="fixed top-0 left-0 h-1 bg-gradient-to-r from-accent to-gold z-50 transition-all duration-300"
+                style="width: 0%;"></div>
+            </div>
+        </section>
+
+        <!-- Current Focus Section -->
+        <section class="py-12 sm:py-16 lg:py-20" style="background-color: #1A1F3A;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 sm:mb-16 section-fade">
+                    <h2 class="responsive-text-3xl font-bold mb-4 sm:mb-6 text-white">Current Focus</h2>
+                    <p class="responsive-text-lg text-gray-400 px-4">Discover how we turn bold ideas into thriving
+                        brands</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                    <!-- Active: AishNar Digital -->
+                    <div class="card-hover animated-border p-6 sm:p-8 rounded-xl sm:rounded-2xl relative overflow-hidden section-fade cursor-pointer"
+                        onclick="window.open('https://aishnardigital.ct.ws', '_blank')">
+                        <div
+                            class="absolute top-0 right-0 bg-gradient-to-r from-green-500 to-green-400 text-xs px-3 py-1 rounded-bl-lg font-semibold text-white shadow-lg">
+                            ✨ ACTIVE
+                        </div>
+
+                        <div class="text-3xl sm:text-4xl mb-4 filter drop-shadow-lg">💻</div>
+
+                        <h3 class="responsive-text-xl font-bold mb-4 text-white glow-text">AishNar Digital</h3>
+
+                        <p class="text-gray-300 mb-6 responsive-text-sm">
+                            SEO, Branding, Mobile Dev, Social Media, Content & Strategy
+                        </p>
+
+                        <button id="explore-now-btn"
+                            class="btn-gold px-4 sm:px-6 py-2 rounded-full font-semibold responsive-text-sm"
+                            onclick="event.stopPropagation(); window.open('https://aishnardigital.ct.ws', '_blank')">
+                            Explore Now
+                        </button>
+                    </div>
+
+
+
+                    <!-- Coming Soon Items -->
+                    <div
+                        class="card-hover glass-effect p-6 sm:p-8 rounded-xl sm:rounded-2xl relative overflow-hidden section-fade">
+                        <div class="absolute inset-0 backdrop-blur-sm flex items-center justify-center"
+                            style="background-color: rgba(10, 14, 39, 0.8);">
+                            <span
+                                class="bg-gradient-to-r from-yellow-500 to-yellow-400 text-black px-3 sm:px-4 py-1 sm:py-2 rounded-full font-bold responsive-text-sm shadow-lg">🚀
+                                COMING SOON</span>
+                        </div>
+                        <div class="text-3xl sm:text-4xl mb-4 filter drop-shadow-lg">👔</div>
+                        <h3 class="responsive-text-xl font-bold mb-4 text-white">AishNar Clothing</h3>
+                        <p class="text-gray-400 mb-6 responsive-text-sm">Fashion that speaks your ambition</p>
+                        <button
+                            class="notify-btn btn-secondary px-4 sm:px-6 py-2 rounded-full font-semibold responsive-text-sm">
+                            Notify Me
+                        </button>
+                    </div>
+
+                    <div
+                        class="card-hover glass-effect p-6 sm:p-8 rounded-xl sm:rounded-2xl relative overflow-hidden section-fade">
+                        <div class="absolute inset-0 backdrop-blur-sm flex items-center justify-center"
+                            style="background-color: rgba(10, 14, 39, 0.8);">
+                            <span
+                                class="bg-gradient-to-r from-yellow-500 to-yellow-400 text-black px-3 sm:px-4 py-1 sm:py-2 rounded-full font-bold responsive-text-sm shadow-lg">🚀
+                                COMING SOON</span>
+                        </div>
+                        <div class="text-3xl sm:text-4xl mb-4 filter drop-shadow-lg">🎯</div>
+                        <h3 class="responsive-text-xl font-bold mb-4 text-white">AishNar Skills</h3>
+                        <p class="text-gray-400 mb-6 responsive-text-sm">Unlock your potential with expert training</p>
+                        <button
+                            class="notify-btn btn-secondary px-4 sm:px-6 py-2 rounded-full font-semibold responsive-text-sm">
+                            Notify Me
+                        </button>
+                    </div>
+
+                    <div
+                        class="card-hover glass-effect p-6 sm:p-8 rounded-xl sm:rounded-2xl relative overflow-hidden section-fade">
+                        <div class="absolute inset-0 backdrop-blur-sm flex items-center justify-center"
+                            style="background-color: rgba(10, 14, 39, 0.8);">
+                            <span
+                                class="bg-gradient-to-r from-yellow-500 to-yellow-400 text-black px-3 sm:px-4 py-1 sm:py-2 rounded-full font-bold responsive-text-sm shadow-lg">🚀
+                                COMING SOON</span>
+                        </div>
+                        <div class="text-3xl sm:text-4xl mb-4 filter drop-shadow-lg">🛡️</div>
+                        <h3 class="responsive-text-xl font-bold mb-4 text-white">AishNar Secure</h3>
+                        <p class="text-gray-400 mb-6 responsive-text-sm">Protection you can trust</p>
+                        <button
+                            class="notify-btn btn-secondary px-4 sm:px-6 py-2 rounded-full font-semibold responsive-text-sm">
+                            Notify Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-12 sm:py-16 lg:py-20 relative overflow-hidden"
+            style="background: linear-gradient(135deg, #0A0E27 0%, #151937 50%, #1A1F3A 100%);">
+            <!-- Floating particles for about section -->
+            <div class="floating-particle w-3 h-3 bg-accent/20 top-20 left-10" style="animation-delay: 1s;"></div>
+            <div class="floating-particle w-2 h-2 bg-gold/30 top-40 right-20" style="animation-delay: 3s;"></div>
+            <div class="floating-particle w-4 h-4 bg-accent-light/15 bottom-32 left-1/4" style="animation-delay: 5s;">
+            </div>
+            <div class="floating-particle w-2 h-2 bg-gold/25 bottom-20 right-1/3" style="animation-delay: 7s;"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Section Header with unique design -->
+                <div class="text-center mb-16 sm:mb-20 section-fade">
+                    <div class="inline-flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-0.5 bg-gradient-to-r from-transparent to-accent"></div>
+                        <div
+                            class="animated-border w-12 h-12 rounded-full flex items-center justify-center overflow-hidden">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center p-0.5">
+                                <img src="aishnarlogo1.png" alt="AishNar Logo"
+                                    class="w-full h-full object-cover rounded-full scale-125 hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="w-full h-full bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center font-bold text-white hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                    style="display: none;">
+                                    A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-12 h-0.5 bg-gradient-to-l from-transparent to-accent"></div>
+                    </div>
+                    <h2 class="responsive-text-4xl font-black mb-6 text-white glow-text">About AishNar</h2>
+                    <p class="responsive-text-xl text-accent font-medium mb-4">The Genesis of Innovation</p>
+                    <p class="responsive-text-base text-gray-400 max-w-2xl mx-auto">Where bold visions meet relentless
+                        execution</p>
+                </div>
+
+                <!-- Interactive Timeline/Story Section -->
+                <div class="mb-16 sm:mb-20 section-fade">
+                    <div class="relative">
+                        <!-- Central timeline line -->
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-accent via-gold to-accent-light opacity-30">
+                        </div>
+
+                        <!-- Timeline items -->
+                        <div class="space-y-12 sm:space-y-16">
+                            <!-- Vision -->
+                            <div class="flex items-center justify-center">
+                                <div class="glass-effect p-8 sm:p-10 rounded-2xl max-w-4xl w-full relative">
+                                    <div
+                                        class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-accent rounded-full border-4 border-primary flex items-center justify-center">
+                                        <span class="text-white text-sm font-bold">🎯</span>
+                                    </div>
+                                    <div class="text-center lg:text-left lg:pl-8">
+                                        <h3 class="responsive-text-2xl font-bold mb-4 text-accent">Our Vision</h3>
+                                        <p class="responsive-text-lg text-gray-300 leading-relaxed mb-6">
+                                            To become the catalyst that transforms ambitious ideas into
+                                            industry-defining ventures. We don't just build companies - we architect
+                                            ecosystems that reshape how the world works.
+                                        </p>
+                                        <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+                                            <span
+                                                class="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium">Innovation</span>
+                                            <span
+                                                class="px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium">Excellence</span>
+                                            <span
+                                                class="px-4 py-2 bg-accent-light/20 text-accent-light rounded-full text-sm font-medium">Impact</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mission -->
+                            <div class="flex items-center justify-center">
+                                <div class="glass-effect p-8 sm:p-10 rounded-2xl max-w-4xl w-full relative">
+                                    <div
+                                        class="absolute -right-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-gold rounded-full border-4 border-primary flex items-center justify-center">
+                                        <span class="text-white text-sm font-bold">🚀</span>
+                                    </div>
+                                    <div class="text-center lg:text-right lg:pr-8">
+                                        <h3 class="responsive-text-2xl font-bold mb-4 text-gold">Our Mission</h3>
+                                        <p class="responsive-text-lg text-gray-300 leading-relaxed mb-6">
+                                            Build and scale ventures across technology, education, fashion, and
+                                            security. Every project we touch becomes a testament to what's possible when
+                                            vision meets execution.
+                                        </p>
+                                        <div
+                                            class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto lg:ml-auto lg:mr-0">
+                                            <div class="text-center p-3 bg-surface/50 rounded-lg">
+                                                <div class="text-2xl mb-2">💻</div>
+                                                <div class="text-sm text-gray-400">Technology</div>
+                                            </div>
+                                            <div class="text-center p-3 bg-surface/50 rounded-lg">
+                                                <div class="text-2xl mb-2">🎓</div>
+                                                <div class="text-sm text-gray-400">Education</div>
+                                            </div>
+                                            <div class="text-center p-3 bg-surface/50 rounded-lg">
+                                                <div class="text-2xl mb-2">👔</div>
+                                                <div class="text-sm text-gray-400">Fashion</div>
+                                            </div>
+                                            <div class="text-center p-3 bg-surface/50 rounded-lg">
+                                                <div class="text-2xl mb-2">🛡️</div>
+                                                <div class="text-sm text-gray-400">Security</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Story -->
+                            <div class="flex items-center justify-center">
+                                <div class="glass-effect p-8 sm:p-10 rounded-2xl max-w-4xl w-full relative">
+                                    <div
+                                        class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-accent-light rounded-full border-4 border-primary flex items-center justify-center">
+                                        <span class="text-white text-sm font-bold">📖</span>
+                                    </div>
+                                    <div class="text-center lg:text-left lg:pl-8">
+                                        <h3 class="responsive-text-2xl font-bold mb-4 text-accent-light">Our Story</h3>
+                                        <div class="space-y-4 responsive-text-base text-gray-300 leading-relaxed">
+                                            <p>
+                                                It began with a simple yet powerful realization: the world doesn't need
+                                                another company. It needs builders who dare to reimagine what's
+                                                possible.
+                                            </p>
+                                            <p>
+                                                Two friends, united by an unshakeable belief that great ideas deserve
+                                                great execution, decided to create not just a business, but a universe
+                                                of ventures that would leave an indelible mark on the world.
+                                            </p>
+                                            <p class="text-accent font-medium">
+                                                "We don't build for today. We build for the world our children will
+                                                inherit."
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founders Section -->
+                <div class="section-fade">
+                    <div class="container max-w-7xl mx-auto">
+                        <h2
+                            class="section-title responsive-text-3xl font-bold mb-8 sm:mb-12 text-center text-white glow-text">
+                            Meet Our Founders</h2>
+
+                        <!-- Mobile-first responsive founders grid -->
+                        <div class="founders-container">
+                            <!-- Mobile: Stack vertically, Desktop: Side by side -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
+
+                                <!-- LEFT: Aishwary Kumawat -->
+                                <div
+                                    class="founder-card order-1 lg:order-1 glass-effect p-6 sm:p-8 lg:p-10 rounded-2xl text-center hover:scale-105 transition-all duration-500 group relative overflow-hidden">
+                                    <!-- Dynamic background effect -->
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    </div>
+
+                                    <!-- Floating particles for this card -->
+                                    <div class="absolute top-4 right-4 w-2 h-2 bg-gold/30 rounded-full animate-pulse">
+                                    </div>
+                                    <div class="absolute bottom-6 left-6 w-1 h-1 bg-gold/40 rounded-full animate-bounce"
+                                        style="animation-delay: 1s;"></div>
+
+                                    <div class="relative z-10">
+                                        <!-- Enhanced avatar with animation -->
+                                        <div
+                                            class="founder-avatar w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 mx-auto mb-6 sm:mb-8 relative group-hover:scale-110 transition-transform duration-500">
+                                            <div
+                                                class="absolute inset-0 bg-gradient-to-r from-gold/20 to-gold/10 rounded-full animate-pulse">
+                                            </div>
+                                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                                                class="w-full h-full relative z-10">
+                                                <defs>
+                                                    <linearGradient id="gradAishwary" x1="0%" y1="0%" x2="100%"
+                                                        y2="100%">
+                                                        <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1">
+                                                        </stop>
+                                                        <stop offset="100%" style="stop-color:#FCD34D;stop-opacity:1">
+                                                        </stop>
+                                                    </linearGradient>
+                                                    <filter id="glow">
+                                                        <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                                                        <feMerge>
+                                                            <feMergeNode in="coloredBlur" />
+                                                            <feMergeNode in="SourceGraphic" />
+                                                        </feMerge>
+                                                    </filter>
+                                                </defs>
+                                                <circle cx="100" cy="70" r="50" fill="#333"></circle>
+                                                <circle cx="100" cy="230" r="100" fill="#333"></circle>
+                                                <circle cx="100" cy="65" r="40" fill="url(#gradAishwary)" opacity="0.9"
+                                                    filter="url(#glow)"></circle>
+                                                <circle cx="85" cy="60" r="8" fill="white" opacity="0.8"></circle>
+                                                <circle cx="115" cy="58" r="6" fill="white" opacity="0.6"></circle>
+                                            </svg>
+                                        </div>
+
+                                        <!-- Name with typing effect -->
+                                        <h3
+                                            class="founder-name responsive-text-xl sm:responsive-text-2xl font-bold mb-2 sm:mb-3 text-white group-hover:text-gold transition-colors duration-300">
+                                            <span class="inline-block">Aishwary Kumawat</span>
+                                        </h3>
+
+                                        <!-- Title with enhanced styling -->
+                                        <div
+                                            class="founder-title text-gold mb-3 sm:mb-4 responsive-text-base sm:responsive-text-lg font-semibold relative">
+                                            <span
+                                                class="bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent">
+                                                Tech & Stgategy Lead
+                                            </span>
+                                            <div
+                                                class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent">
+                                            </div>
+                                        </div>
+
+                                        <!-- Bio with better spacing -->
+                                        <p
+                                            class="founder-bio text-gray-300 responsive-text-sm sm:responsive-text-base mb-6 sm:mb-8 leading-relaxed max-w-sm mx-auto">
+                                            A passionate leader with expertise in team management and strategic
+                                            planning, delivering experiences that drive business growth.
+                                        </p>
+
+
+                                        <!-- Enhanced social links -->
+                                        <div class="founder-social flex justify-center space-x-4 sm:space-x-6">
+                                            <a href="#" aria-label="LinkedIn"
+                                                class="social-link group/social relative p-2 rounded-full bg-gray-800/50 hover:bg-gold/20 transition-all duration-300 hover:scale-110">
+                                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gray-400 group-hover/social:text-gold transition-colors"
+                                                    fill="currentColor" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                                </svg>
+                                            </a>
+                                            <a href="#" aria-label="GitHub"
+                                                class="social-link group/social relative p-2 rounded-full bg-gray-800/50 hover:bg-gold/20 transition-all duration-300 hover:scale-110">
+                                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gray-400 group-hover/social:text-gold transition-colors"
+                                                    fill="currentColor" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                                </svg>
+                                            </a>
+                                            <a href="#" aria-label="Dribbble"
+                                                class="social-link group/social relative p-2 rounded-full bg-gray-800/50 hover:bg-gold/20 transition-all duration-300 hover:scale-110">
+                                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gray-400 group-hover/social:text-gold transition-colors"
+                                                    fill="currentColor" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.626 0 12 0zm7.568 5.302c1.4 1.5 2.252 3.5 2.273 5.698-.653-.126-7.512-1.508-7.512-1.508-.239-.498-.5-1.008-.79-1.518C19.014 6.753 19.568 5.302 19.568 5.302zM12 2.252c2.69 0 5.144.982 7.04 2.606 0 0-.448 1.181-6.123 2.928C11.016 4.6 9.038 2.4 9.038 2.4 9.677 2.325 10.333 2.252 12 2.252zM7.462 3.333S9.417 5.538 11.231 8.84c-4.777 1.279-8.94 1.252-8.94 1.252-.504-2.259.327-4.333 1.462-6.759zM2.252 12.01c0-.137.003-.273.009-.408 0 0 4.896.017 10.28-1.428.226.442.437.895.629 1.353-.159.045-.32.095-.477.148-5.69 1.83-8.693 6.776-8.693 6.776v-.004c-1.134-1.785-1.748-3.887-1.748-6.437zM12 21.748c-2.512 0-4.812-.9-6.6-2.4 0 0 2.685-4.283 9.030-6.437.151-.051.304-.1.459-.144 1.107 2.878 1.56 5.289 1.615 5.969-1.4.615-2.952.962-4.504.962zm6.419-1.748c-.044-.589-.234-2.084-1.107-4.636 6.717-1.068 8.445-6.229 8.445-6.229.982 1.586 1.54 3.418 1.54 5.378 0 2.265-.681 4.370-1.878 6.137z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- RIGHT: Narender Kumar -->
+                                <div
+                                    class="founder-card order-2 lg:order-2 glass-effect p-6 sm:p-8 lg:p-10 rounded-2xl text-center hover:scale-105 transition-all duration-500 group relative overflow-hidden">
+                                    <!-- Dynamic background effect -->
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    </div>
+
+                                    <!-- Floating particles for this card -->
+                                    <div class="absolute top-4 left-4 w-2 h-2 bg-accent/30 rounded-full animate-pulse">
+                                    </div>
+                                    <div class="absolute bottom-6 right-6 w-1 h-1 bg-accent/40 rounded-full animate-bounce"
+                                        style="animation-delay: 1.5s;"></div>
+
+                                    <div class="relative z-10">
+                                        <!-- Enhanced avatar with animation -->
+                                        <div
+                                            class="founder-avatar w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 mx-auto mb-6 sm:mb-8 relative group-hover:scale-110 transition-transform duration-500">
+                                            <div
+                                                class="absolute inset-0 bg-gradient-to-r from-accent/20 to-accent/10 rounded-full animate-pulse">
+                                            </div>
+                                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                                                class="w-full h-full relative z-10">
+                                                <defs>
+                                                    <linearGradient id="gradNarender" x1="0%" y1="0%" x2="100%"
+                                                        y2="100%">
+                                                        <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1">
+                                                        </stop>
+                                                        <stop offset="100%" style="stop-color:#818CF8;stop-opacity:1">
+                                                        </stop>
+                                                    </linearGradient>
+                                                    <filter id="glowBlue">
+                                                        <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                                                        <feMerge>
+                                                            <feMergeNode in="coloredBlur" />
+                                                            <feMergeNode in="SourceGraphic" />
+                                                        </feMerge>
+                                                    </filter>
+                                                </defs>
+                                                <circle cx="100" cy="70" r="50" fill="#333"></circle>
+                                                <circle cx="100" cy="230" r="100" fill="#333"></circle>
+                                                <circle cx="100" cy="65" r="40" fill="url(#gradNarender)" opacity="0.9"
+                                                    filter="url(#glowBlue)"></circle>
+                                                <circle cx="85" cy="60" r="8" fill="white" opacity="0.8"></circle>
+                                                <circle cx="115" cy="58" r="6" fill="white" opacity="0.6"></circle>
+                                            </svg>
+                                        </div>
+
+                                        <!-- Name with typing effect -->
+                                        <h3
+                                            class="founder-name responsive-text-xl sm:responsive-text-2xl font-bold mb-2 sm:mb-3 text-white group-hover:text-accent transition-colors duration-300">
+                                            <span class="inline-block">Narender Kumar</span>
+                                        </h3>
+
+                                        <!-- Title with enhanced styling -->
+                                        <div
+                                            class="founder-title text-accent mb-3 sm:mb-4 responsive-text-base sm:responsive-text-lg font-semibold relative">
+                                            <span
+                                                class="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
+                                                Strategy & Digital Growth Lead
+                                            </span>
+                                            <div
+                                                class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-12 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent">
+                                            </div>
+                                        </div>
+
+                                        <!-- Bio with better spacing -->
+                                        <p
+                                            class="founder-bio text-gray-300 responsive-text-sm sm:responsive-text-base mb-6 sm:mb-8 leading-relaxed max-w-sm mx-auto">
+                                            A strategic thinker with a proven track record of helping businesses achieve
+                                            sustainable digital growth.
+                                        </p>
+
+                                        <!-- Enhanced social links -->
+                                        <div class="founder-social flex justify-center space-x-4 sm:space-x-6">
+                                            <a href="#" aria-label="LinkedIn"
+                                                class="social-link group/social relative p-2 rounded-full bg-gray-800/50 hover:bg-accent/20 transition-all duration-300 hover:scale-110">
+                                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gray-400 group-hover/social:text-accent transition-colors"
+                                                    fill="currentColor" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                                </svg>
+                                            </a>
+                                            <a href="#" aria-label="Twitter"
+                                                class="social-link group/social relative p-2 rounded-full bg-gray-800/50 hover:bg-accent/20 transition-all duration-300 hover:scale-110">
+                                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gray-400 group-hover/social:text-accent transition-colors"
+                                                    fill="currentColor" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                                                </svg>
+                                            </a>
+                                            <a href="#" aria-label="Instagram"
+                                                class="social-link group/social relative p-2 rounded-full bg-gray-800/50 hover:bg-accent/20 transition-all duration-300 hover:scale-110">
+                                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gray-400 group-hover/social:text-accent transition-colors"
+                                                    fill="currentColor" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote section -->
+                    <div class="mt-12 text-center">
+                        <div class="glass-effect p-8 rounded-2xl max-w-3xl mx-auto">
+                            <div class="text-4xl sm:text-5xl text-accent mb-4">"</div>
+                            <p class="responsive-text-xl text-gray-300 italic leading-relaxed mb-4">
+                                We don't just build companies. We craft legacies. Every line of code, every strategic
+                                decision, every creative choice is made with one question in mind: Will this matter in
+                                50 years?
+                            </p>
+                            <div class="text-4xl sm:text-5xl text-accent rotate-180">"</div>
+                            <p class="text-accent font-medium mt-4">- The AishNar Philosophy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Build Section -->
+        <section id="ventures" class="py-12 sm:py-16 lg:py-20 relative overflow-hidden"
+            style="background: linear-gradient(135deg, #2A3439 0%, #1C2529 50%, #2A3439 100%);">
+            <!-- Enhanced floating particles -->
+            <div class="floating-particle w-3 h-3 bg-accent/20 top-16 left-8" style="animation-delay: 0s;"></div>
+            <div class="floating-particle w-2 h-2 bg-gold/30 top-32 right-12" style="animation-delay: 2s;"></div>
+            <div class="floating-particle w-4 h-4 bg-accent-light/15 bottom-24 left-16" style="animation-delay: 4s;">
+            </div>
+            <div class="floating-particle w-2 h-2 bg-gold/25 bottom-16 right-20" style="animation-delay: 6s;"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Enhanced Section Header -->
+                <div class="text-center mb-12 sm:mb-16 lg:mb-20 section-fade">
+                    <div class="inline-flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-0.5 bg-gradient-to-r from-transparent to-accent"></div>
+                        <div
+                            class="animated-border w-12 h-12 rounded-full flex items-center justify-center overflow-hidden">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-accent to-gold rounded-full flex items-center justify-center p-0.5">
+                                <img src="aishnarlogo1.png" alt="AishNar Logo"
+                                    class="w-full h-full object-cover rounded-full scale-125 hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="w-full h-full bg-gradient-to-br from-accent to-gold rounded-full flex items-center justify-center text-white font-bold text-lg hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                    style="display: none;">
+                                    🚀
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-12 h-0.5 bg-gradient-to-l from-transparent to-accent"></div>
+                    </div>
+                    <h2 class="responsive-text-4xl font-black mb-4 sm:mb-6 text-white glow-text">What We Build</h2>
+                    <p class="responsive-text-xl text-accent font-medium mb-4">Ventures that define tomorrow</p>
+                    <p class="responsive-text-base text-gray-400 max-w-2xl mx-auto">From digital innovation to lifestyle
+                        brands - we create ecosystems that transform industries</p>
+                </div>
+
+                <!-- Active Venture Spotlight -->
+                <div class="mb-16 sm:mb-20 lg:mb-24 section-fade">
+                    <div class="relative">
+                        <!-- Spotlight indicator -->
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
+                            <div
+                                class="bg-gradient-to-r from-green-500 to-green-400 px-4 py-2 rounded-full text-white font-bold text-sm shadow-lg animate-pulse">
+                                ✨ LIVE & ACTIVE
+                            </div>
+                        </div>
+
+                        <!-- Main spotlight card -->
+                        <div
+                            class="bg-gradient-to-r from-accent via-accent-dark to-accent p-1 rounded-2xl sm:rounded-3xl max-w-5xl mx-auto">
+                            <div class="p-6 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl relative overflow-hidden"
+                                style="background: linear-gradient(135deg, #1C2529 0%, #2A3439 100%);">
+                                <!-- Background pattern -->
+                                <div class="absolute inset-0 opacity-5">
+                                    <div class="absolute top-4 left-4 w-8 h-8 border-2 border-accent rounded-full">
+                                    </div>
+                                    <div class="absolute top-12 right-8 w-4 h-4 bg-gold rounded-full"></div>
+                                    <div
+                                        class="absolute bottom-8 left-12 w-6 h-6 border border-accent-light rounded-full">
+                                    </div>
+                                    <div class="absolute bottom-4 right-4 w-3 h-3 bg-accent rounded-full"></div>
+                                </div>
+
+                                <div class="relative z-10">
+                                    <!-- Mobile-first layout -->
+                                    <div class="text-center mb-6 sm:mb-8">
+                                        <div
+                                            class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl flex items-center justify-center">
+                                            <span class="text-3xl sm:text-4xl lg:text-5xl">💻</span>
+                                        </div>
+                                        <h3
+                                            class="responsive-text-3xl lg:responsive-text-4xl font-black mb-3 sm:mb-4 text-white glow-text">
+                                            AishNar Digital</h3>
+                                        <div
+                                            class="w-16 h-1 bg-gradient-to-r from-accent to-gold mx-auto mb-4 sm:mb-6 rounded-full">
+                                        </div>
+                                    </div>
+
+                                    <!-- Description with better mobile spacing -->
+                                    <p
+                                        class="responsive-text-lg text-gray-300 mb-6 sm:mb-8 lg:mb-10 max-w-3xl mx-auto leading-relaxed text-center">
+                                        Your complete digital transformation partner. We don't just build websites - we
+                                        craft digital experiences that drive real business growth and meaningful
+                                        connections.
+                                    </p>
+
+                                    <!-- Enhanced services grid - Mobile first -->
+                                    <div
+                                        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-8 sm:mb-10 lg:mb-12">
+                                        <div
+                                            class="group bg-accent/10 hover:bg-accent/20 p-3 sm:p-4 rounded-xl transition-all duration-300 hover:scale-105 text-center">
+                                            <div
+                                                class="text-xl sm:text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                🔍</div>
+                                            <span class="text-accent font-medium text-xs sm:text-sm">SEO Mastery</span>
+                                        </div>
+                                        <div
+                                            class="group bg-gold/10 hover:bg-gold/20 p-3 sm:p-4 rounded-xl transition-all duration-300 hover:scale-105 text-center">
+                                            <div
+                                                class="text-xl sm:text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                🎨</div>
+                                            <span class="text-gold font-medium text-xs sm:text-sm">Brand Identity</span>
+                                        </div>
+                                        <div
+                                            class="group bg-accent-light/10 hover:bg-accent-light/20 p-3 sm:p-4 rounded-xl transition-all duration-300 hover:scale-105 text-center">
+                                            <div
+                                                class="text-xl sm:text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                📱</div>
+                                            <span class="text-accent-light font-medium text-xs sm:text-sm">Mobile
+                                                Dev</span>
+                                        </div>
+                                        <div
+                                            class="group bg-accent/10 hover:bg-accent/20 p-3 sm:p-4 rounded-xl transition-all duration-300 hover:scale-105 text-center">
+                                            <div
+                                                class="text-xl sm:text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                📊</div>
+                                            <span class="text-accent font-medium text-xs sm:text-sm">Social Media</span>
+                                        </div>
+                                        <div
+                                            class="group bg-gold/10 hover:bg-gold/20 p-3 sm:p-4 rounded-xl transition-all duration-300 hover:scale-105 text-center">
+                                            <div
+                                                class="text-xl sm:text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                ✍️</div>
+                                            <span class="text-gold font-medium text-xs sm:text-sm">Content</span>
+                                        </div>
+                                        <div
+                                            class="group bg-accent-light/10 hover:bg-accent-light/20 p-3 sm:p-4 rounded-xl transition-all duration-300 hover:scale-105 text-center">
+                                            <div
+                                                class="text-xl sm:text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                🎯</div>
+                                            <span
+                                                class="text-accent-light font-medium text-xs sm:text-sm">Strategy</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Stats section - Mobile optimized -->
+                                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-10">
+                                        <div class="text-center p-4 bg-surface/30 rounded-xl">
+                                            <div class="text-2xl sm:text-3xl font-bold text-accent mb-1">100%</div>
+                                            <div class="text-xs sm:text-sm text-gray-400">Custom Solutions</div>
+                                        </div>
+                                        <div class="text-center p-4 bg-surface/30 rounded-xl">
+                                            <div class="text-2xl sm:text-3xl font-bold text-gold mb-1">24/7</div>
+                                            <div class="text-xs sm:text-sm text-gray-400">Support</div>
+                                        </div>
+                                        <div class="text-center p-4 bg-surface/30 rounded-xl">
+                                            <div class="text-2xl sm:text-3xl font-bold text-accent-light mb-1">∞</div>
+                                            <div class="text-xs sm:text-sm text-gray-400">Revisions</div>
+                                        </div>
+                                        <div class="text-center p-4 bg-surface/30 rounded-xl">
+                                            <div class="text-2xl sm:text-3xl font-bold text-white mb-1">ROI</div>
+                                            <div class="text-xs sm:text-sm text-gray-400">Focused</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CTA buttons - Mobile first -->
+                                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+                                        <a href="https://aishnardigital.ct.ws" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <button id="explore-digital-main-btn"
+                                                class="btn-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold responsive-text-base sm:responsive-text-lg hover:scale-105 transition-transform duration-300">
+                                                🚀 Explore AishNar Digital
+                                            </button>
+                                        </a>
+
+                                        <button id="contact-digital-main-btn"
+                                            class="btn-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold responsive-text-base sm:responsive-text-lg hover:scale-105 transition-transform duration-300">
+                                            💬 Get Quote
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Ventures - Enhanced Mobile Design -->
+                <div class="section-fade">
+                    <div class="text-center mb-8 sm:mb-12">
+                        <h3 class="responsive-text-2xl sm:responsive-text-3xl font-bold mb-4 text-white">Coming Soon
+                        </h3>
+                        <p class="responsive-text-base text-gray-400">The future of AishNar is being built</p>
+                    </div>
+
+                    <!-- Mobile-first grid for coming soon ventures -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                        <!-- AishNar Clothing -->
+                        <div
+                            class="group relative overflow-hidden glass-effect p-6 sm:p-8 rounded-2xl hover:scale-105 transition-all duration-500">
+                            <!-- Coming soon overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+
+                            <!-- Status badge -->
+                            <div
+                                class="absolute top-4 right-4 bg-gradient-to-r from-yellow-500 to-yellow-400 text-black px-3 py-1 rounded-full font-bold text-xs shadow-lg">
+                                🚀 SOON
+                            </div>
+
+                            <div class="relative z-10">
+                                <!-- Icon with animation -->
+                                <div
+                                    class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                    <span class="text-3xl sm:text-4xl">👔</span>
+                                </div>
+
+                                <h4
+                                    class="responsive-text-xl sm:responsive-text-2xl font-bold mb-3 sm:mb-4 text-white text-center">
+                                    AishNar Clothing</h4>
+                                <p class="text-gray-400 mb-6 sm:mb-8 responsive-text-sm text-center leading-relaxed">
+                                    Fashion that speaks your ambition. Premium streetwear and professional attire for
+                                    the modern entrepreneur.</p>
+
+                                <!-- Features preview -->
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-yellow-400">✓</span>
+                                        <span>Premium Quality Materials</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-yellow-400">✓</span>
+                                        <span>Sustainable Fashion</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-yellow-400">✓</span>
+                                        <span>Limited Edition Drops</span>
+                                    </div>
+                                </div>
+
+                                <button
+                                    class="notify-btn btn-secondary w-full py-3 rounded-full font-semibold responsive-text-sm hover:scale-105 transition-transform duration-300">
+                                    🔔 Notify Me
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- AishNar Skills -->
+                        <div
+                            class="group relative overflow-hidden glass-effect p-6 sm:p-8 rounded-2xl hover:scale-105 transition-all duration-500">
+                            <!-- Coming soon overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+
+                            <!-- Status badge -->
+                            <div
+                                class="absolute top-4 right-4 bg-gradient-to-r from-yellow-500 to-yellow-400 text-black px-3 py-1 rounded-full font-bold text-xs shadow-lg">
+                                🚀 SOON
+                            </div>
+
+                            <div class="relative z-10">
+                                <!-- Icon with animation -->
+                                <div
+                                    class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-blue-500/20 to-blue-600/10 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                    <span class="text-3xl sm:text-4xl">🎯</span>
+                                </div>
+
+                                <h4
+                                    class="responsive-text-xl sm:responsive-text-2xl font-bold mb-3 sm:mb-4 text-white text-center">
+                                    AishNar Skills</h4>
+                                <p class="text-gray-400 mb-6 sm:mb-8 responsive-text-sm text-center leading-relaxed">
+                                    Unlock your potential with expert training. From coding bootcamps to business
+                                    strategy masterclasses.</p>
+
+                                <!-- Features preview -->
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-blue-400">✓</span>
+                                        <span>Expert-Led Courses</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-blue-400">✓</span>
+                                        <span>Hands-On Projects</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-blue-400">✓</span>
+                                        <span>Industry Certifications</span>
+                                    </div>
+                                </div>
+
+                                <button
+                                    class="notify-btn btn-secondary w-full py-3 rounded-full font-semibold responsive-text-sm hover:scale-105 transition-transform duration-300">
+                                    🔔 Notify Me
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- AishNar Secure -->
+                        <div
+                            class="group relative overflow-hidden glass-effect p-6 sm:p-8 rounded-2xl hover:scale-105 transition-all duration-500 sm:col-span-2 lg:col-span-1">
+                            <!-- Coming soon overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-red-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+
+                            <!-- Status badge -->
+                            <div
+                                class="absolute top-4 right-4 bg-gradient-to-r from-yellow-500 to-yellow-400 text-black px-3 py-1 rounded-full font-bold text-xs shadow-lg">
+                                🚀 SOON
+                            </div>
+
+                            <div class="relative z-10">
+                                <!-- Icon with animation -->
+                                <div
+                                    class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-red-500/20 to-red-600/10 rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                                    <span class="text-3xl sm:text-4xl">🛡️</span>
+                                </div>
+
+                                <h4
+                                    class="responsive-text-xl sm:responsive-text-2xl font-bold mb-3 sm:mb-4 text-white text-center">
+                                    AishNar Secure</h4>
+                                <p class="text-gray-400 mb-6 sm:mb-8 responsive-text-sm text-center leading-relaxed">
+                                    Protection you can trust. Comprehensive cybersecurity solutions for businesses and
+                                    individuals.</p>
+
+                                <!-- Features preview -->
+                                <div class="space-y-2 mb-6">
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-red-400">✓</span>
+                                        <span>Advanced Threat Detection</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-red-400">✓</span>
+                                        <span>24/7 Monitoring</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                        <span class="text-red-400">✓</span>
+                                        <span>Incident Response</span>
+                                    </div>
+                                </div>
+
+                                <button
+                                    class="notify-btn btn-secondary w-full py-3 rounded-full font-semibold responsive-text-sm hover:scale-105 transition-transform duration-300">
+                                    🔔 Notify Me
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline indicator -->
+                    <div class="mt-12 sm:mt-16 text-center">
+                        <div class="inline-flex items-center space-x-4 p-4 sm:p-6 bg-surface/30 rounded-2xl">
+                            <div class="text-2xl sm:text-3xl">⏰</div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1 responsive-text-base">Launch Timeline</h4>
+                                <p class="text-gray-400 text-sm">New ventures launching throughout 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reports Preview -->
+        <div class="mt-16 sm:mt-20 glass-effect p-8 sm:p-10 rounded-2xl section-fade">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-white">AishNar <span
+                            class="text-highlight">Reports</span></h3>
+                    <p class="text-gray-300 mb-6">
+                        Dive into our collection of industry insights, market analyses, and trend forecasts. Our reports
+                        provide valuable data and actionable strategies for businesses looking to stay ahead.
+                    </p>
+                    <a href="reports.html"
+                        class="btn-highlight px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                        <span>Browse Reports</span>
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 sm:w-72 sm:h-72 hexagon bg-gradient-to-br from-accent/20 to-highlight/20 flex items-center justify-center p-6">
+                            <div class="text-center">
+                                <div class="text-4xl mb-4">📊</div>
+                                <h4 class="text-xl font-bold mb-2 text-white">Industry Insights</h4>
+                                <p class="text-gray-300 text-sm">Data-driven analysis for strategic decision-making</p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-highlight flex items-center justify-center text-white font-bold text-sm">
+                            NEW
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section id="connect" class="py-12 sm:py-16 lg:py-20" style="background-color: #1C2529;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 sm:mb-16 section-fade">
+                    <h2 class="responsive-text-3xl font-bold mb-4 sm:mb-6 text-white">Connect</h2>
+                    <p class="responsive-text-lg text-gray-400">Let's build the future together</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 sm:gap-16">
+                    <!-- Contact Options -->
+                    <div class="section-fade">
+                        <div class="flex items-center space-x-3 mb-6 sm:mb-8">
+                            <div
+                                class="w-10 h-10 bg-gradient-to-r from-accent to-accent-dark rounded-full flex items-center justify-center animate-pulse">
+                                <span class="text-xl">🤝</span>
+                            </div>
+                            <h3 class="responsive-text-2xl font-bold text-accent">Get In Touch</h3>
+                        </div>
+
+                        <p class="text-gray-300 mb-8 responsive-text-base leading-relaxed">
+                            👋 Ready to start a conversation? Choose your preferred way to connect with us instantly!
+                        </p>
+
+                        <!-- Contact Methods -->
+                        <div class="space-y-4 mb-8">
+                            <!-- Email Contact -->
+                            <button id="email-contact-main"
+                                class="w-full group relative overflow-hidden bg-gradient-to-r from-red-500/20 to-red-600/20 hover:from-red-500/30 hover:to-red-600/30 border border-red-500/30 hover:border-red-500/50 p-6 rounded-xl transition-all duration-300 hover:scale-105">
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                                        <span class="text-2xl">📧</span>
+                                    </div>
+                                    <div class="text-left flex-1">
+                                        <h4 class="text-white font-semibold responsive-text-lg mb-1">Email Us</h4>
+                                        <p class="text-gray-400 responsive-text-sm">💬 Send us a detailed message about
+                                            your project</p>
+                                    </div>
+                                    <div
+                                        class="text-red-400 group-hover:translate-x-1 transition-transform duration-300">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <!-- WhatsApp Contact -->
+                            <button id="whatsapp-contact-main"
+                                class="w-full group relative overflow-hidden bg-gradient-to-r from-green-500/20 to-green-600/20 hover:from-green-500/30 hover:to-green-600/30 border border-green-500/30 hover:border-green-500/50 p-6 rounded-xl transition-all duration-300 hover:scale-105">
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                                        <span class="text-2xl">💬</span>
+                                    </div>
+                                    <div class="text-left flex-1">
+                                        <h4 class="text-white font-semibold responsive-text-lg mb-1">WhatsApp Chat</h4>
+                                        <p class="text-gray-400 responsive-text-sm">🚀 Quick chat for instant responses
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="text-green-400 group-hover:translate-x-1 transition-transform duration-300">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+
+                        <!-- Quick Stats -->
+                        <div class="bg-surface/30 p-6 rounded-xl">
+                            <h4 class="text-white font-semibold mb-4 responsive-text-base">🎯 AishNar at a Glance</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center p-3 bg-accent/10 rounded-lg">
+                                    <div class="text-xl font-bold text-accent mb-1">1</div>
+                                    <div class="text-xs text-gray-400">Active Venture</div>
+                                </div>
+                                <div class="text-center p-3 bg-gold/10 rounded-lg">
+                                    <div class="text-xl font-bold text-gold mb-1">3</div>
+                                    <div class="text-xs text-gray-400">Coming Soon</div>
+                                </div>
+                                <div class="text-center p-3 bg-accent-light/10 rounded-lg">
+                                    <div class="text-xl font-bold text-accent-light mb-1">4</div>
+                                    <div class="text-xs text-gray-400">Industries</div>
+                                </div>
+                                <div class="text-center p-3 bg-surface/50 rounded-lg">
+                                    <div class="text-xl font-bold text-white mb-1">∞</div>
+                                    <div class="text-xs text-gray-400">Possibilities</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter & Social -->
+                    <div class="section-fade">
+                        <h3 class="responsive-text-2xl font-bold mb-6 sm:mb-8 text-accent">Stay Updated</h3>
+
+                        <!-- Newsletter -->
+                        <div class="p-6 sm:p-8 rounded-2xl mb-6 sm:mb-8" style="background-color: #2A3439;">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-r from-accent to-accent-dark rounded-full flex items-center justify-center animate-pulse">
+                                    <span class="text-sm">📬</span>
+                                </div>
+                                <h4 class="responsive-text-lg font-semibold text-white">Newsletter</h4>
+                            </div>
+                            <p class="text-gray-400 mb-6 responsive-text-sm">✨ Be the first to know when new brands
+                                drop.</p>
+
+                            <!-- Newsletter Benefits -->
+                            <div class="space-y-2 mb-6">
+                                <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                    <span class="text-green-400">✓</span>
+                                    <span>Exclusive venture updates</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                    <span class="text-green-400">✓</span>
+                                    <span>Early access to new services</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-sm text-gray-300">
+                                    <span class="text-green-400">✓</span>
+                                    <span>Behind-the-scenes content</span>
+                                </div>
+                            </div>
+
+                            <button id="newsletter-popup-btn"
+                                class="btn-primary w-full py-3 rounded-lg font-semibold responsive-text-sm hover:scale-105 transition-transform duration-300">
+                                📧 Subscribe via Email
+                            </button>
+                        </div>
+
+                        <!-- Follow Our Journey -->
+                        <div class="p-6 sm:p-8 rounded-2xl" style="background-color: #2A3439;">
+                            <div class="flex items-center space-x-3 mb-6">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-r from-accent to-gold rounded-full flex items-center justify-center">
+                                    <span class="text-sm">🌟</span>
+                                </div>
+                                <h4 class="responsive-text-lg font-semibold text-white">Follow Our Journey</h4>
+                            </div>
+
+                            <!-- Enhanced social cards -->
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <a href="https://www.instagram.com/Aishnar_groups" target="_blank"
+                                    class="group relative overflow-hidden bg-gradient-to-br from-pink-500/20 to-purple-600/20 p-4 rounded-xl border border-pink-500/30 hover:scale-105 transition-all duration-300">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    </div>
+                                    <div class="relative flex flex-col items-center text-center">
+                                        <div
+                                            class="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mb-3 group-hover:rotate-12 transition-transform duration-300">
+                                            <span class="text-xl">📷</span>
+                                        </div>
+                                        <div class="font-semibold text-white text-sm mb-1">Instagram</div>
+                                        <div class="text-xs text-gray-400">@Aishnar_groups</div>
+                                    </div>
+                                </a>
+
+                                <a href="https://x.com/aishnar_IN" target="_blank"
+                                    class="group relative overflow-hidden bg-gradient-to-br from-blue-400/20 to-blue-600/20 p-4 rounded-xl border border-blue-500/30 hover:scale-105 transition-all duration-300">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    </div>
+                                    <div class="relative flex flex-col items-center text-center">
+                                        <div
+                                            class="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mb-3 group-hover:rotate-12 transition-transform duration-300">
+                                            <span class="text-xl">🐦</span>
+                                        </div>
+                                        <div class="font-semibold text-white text-sm mb-1">Twitter</div>
+                                        <div class="text-xs text-gray-400">@aishnar_IN</div>
+                                    </div>
+                                </a>
+
+                                <a href="mailto:aishnar.official@gmail.com"
+                                    class="group relative overflow-hidden bg-gradient-to-br from-red-500/20 to-red-600/20 p-4 rounded-xl border border-red-500/30 hover:scale-105 transition-all duration-300">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-red-500/10 to-red-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    </div>
+                                    <div class="relative flex flex-col items-center text-center">
+                                        <div
+                                            class="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mb-3 group-hover:rotate-12 transition-transform duration-300">
+                                            <span class="text-xl">✉️</span>
+                                        </div>
+                                        <div class="font-semibold text-white text-sm mb-1">Email</div>
+                                        <div class="text-xs text-gray-400">Official</div>
+                                    </div>
+                                </a>
+
+                                <a href="https://wa.me/919157255093" target="_blank"
+                                    class="group relative overflow-hidden bg-gradient-to-br from-green-500/20 to-green-600/20 p-4 rounded-xl border border-green-500/30 hover:scale-105 transition-all duration-300">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-green-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    </div>
+                                    <div class="relative flex flex-col items-center text-center">
+                                        <div
+                                            class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-3 group-hover:rotate-12 transition-transform duration-300">
+                                            <span class="text-xl">💬</span>
+                                        </div>
+                                        <div class="font-semibold text-white text-sm mb-1">WhatsApp</div>
+                                        <div class="text-xs text-gray-400">Chat Now</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Social stats -->
+                            <div class="bg-surface/30 p-4 rounded-xl">
+                                <div class="grid grid-cols-3 gap-4 text-center">
+                                    <div>
+                                        <div class="text-lg font-bold text-accent">4</div>
+                                        <div class="text-xs text-gray-400">Platforms</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-lg font-bold text-gold">24/7</div>
+                                        <div class="text-xs text-gray-400">Available</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-lg font-bold text-accent-light">Daily</div>
+                                        <div class="text-xs text-gray-400">Updates</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #0F1419;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Main Footer Content -->
+            <div class="py-12 sm:py-16">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                    <!-- Company Info -->
+                    <div class="sm:col-span-2 lg:col-span-1">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div
+                                class="w-10 h-10 bg-accent rounded-full flex items-center justify-center overflow-hidden p-0.5">
+                                <img src="aishnarlogo1.png" alt="AishNar Logo"
+                                    class="w-full h-full object-cover rounded-full scale-125 hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="w-full h-full bg-accent rounded-full flex items-center justify-center font-bold text-xl text-primary hover:scale-150 transition-transform duration-500 hover:rotate-12"
+                                    style="display: none;">
+                                    A
+                                </div>
+                            </div>
+                            <span class="responsive-text-xl font-bold text-white">AishNar</span>
+                        </div>
+                        <p class="text-gray-400 responsive-text-sm leading-relaxed mb-6">
+                            Building the future through innovative ventures. From digital solutions to fashion, skills,
+                            and security - we turn bold ideas into reality.
+                        </p>
+                        <div class="flex items-center space-x-2 responsive-text-sm text-gray-500">
+                            <span>🇮🇳</span>
+                            <span>Made in India</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-4 sm:mb-6 responsive-text-base">Quick Links</h3>
+                        <ul class="space-y-3 sm:space-y-4">
+                            <li><a href="#home"
+                                    class="text-gray-400 hover:text-accent transition-colors responsive-text-sm">Home</a>
+                            </li>
+                            <li><a href="#about"
+                                    class="text-gray-400 hover:text-accent transition-colors responsive-text-sm">About
+                                    Us</a></li>
+                            <li><a href="#ventures"
+                                    class="text-gray-400 hover:text-accent transition-colors responsive-text-sm">Our
+                                    Ventures</a></li>
+                            <li><a href="#connect"
+                                    class="text-gray-400 hover:text-accent transition-colors responsive-text-sm">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Ventures Status -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-4 sm:mb-6 responsive-text-base">Our Ventures</h3>
+                        <ul class="space-y-3 sm:space-y-4">
+                            <li class="flex items-center space-x-3">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="text-gray-400 responsive-text-sm">AishNar Digital</span>
+                                <span class="text-xs text-green-500 font-medium">ACTIVE</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                <span class="text-gray-400 responsive-text-sm">AishNar Clothing</span>
+                                <span class="text-xs text-yellow-500 font-medium">SOON</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                <span class="text-gray-400 responsive-text-sm">AishNar Skills</span>
+                                <span class="text-xs text-yellow-500 font-medium">SOON</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                <span class="text-gray-400 responsive-text-sm">AishNar Secure</span>
+                                <span class="text-xs text-yellow-500 font-medium">SOON</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter & Contact -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-4 sm:mb-6 responsive-text-base">Stay Connected</h3>
+                        <p class="text-gray-400 responsive-text-sm mb-4">Get notified about new ventures</p>
+                        <div class="space-y-4">
+                            <button id="footer-subscribe-btn"
+                                class="btn-primary w-full px-4 py-3 rounded-lg responsive-text-sm font-medium">
+                                📧 Subscribe to Newsletter
+                            </button>
+
+                            <!-- Social Links -->
+                            <div class="flex space-x-4 pt-2">
+                                <a href="https://www.instagram.com/Aishnar_groups" target="_blank"
+                                    class="text-gray-400 hover:text-accent transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
+                                <a href="https://x.com/aishnar_IN" target="_blank"
+                                    class="text-gray-400 hover:text-accent transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                                    </svg>
+                                </a>
+                                <a href="mailto:aishnar.official@gmail.com"
+                                    class="text-gray-400 hover:text-accent transition-colors">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="https://wa.me/919157255093" target="_blank"
+                                    class="text-gray-400 hover:text-accent transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t py-6 sm:py-8" style="border-color: rgba(161, 209, 177, 0.2);">
+                <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                    <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+                        <p class="text-gray-500 responsive-text-sm">© 2025 AishNar Group. All rights reserved.</p>
+                        <div class="flex space-x-4 responsive-text-sm">
+                            <a href="#" class="text-gray-500 hover:text-accent transition-colors">Privacy Policy</a>
+                            <a href="#" class="text-gray-500 hover:text-accent transition-colors">Terms of Service</a>
+                        </div>
+                    </div>
+                    <div class="responsive-text-sm text-gray-500">
+                        Building the future, one venture at a time.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-fade').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const closeMenuButton = document.getElementById('close-menu');
+        const hamburger = document.querySelector('.hamburger');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('open');
+            menuOverlay.classList.remove('hidden');
+            hamburger.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            menuOverlay.classList.add('hidden');
+            hamburger.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', openMobileMenu);
+            closeMenuButton.addEventListener('click', closeMobileMenu);
+            menuOverlay.addEventListener('click', closeMobileMenu);
+
+            // Close mobile menu when clicking on links
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            // Close menu on escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !mobileMenu.classList.contains('open')) {
+                    closeMobileMenu();
+                }
+            });
+        }
+
+        // Main Email contact button
+        const emailContactMainBtn = document.getElementById('email-contact-main');
+        if (emailContactMainBtn) {
+            emailContactMainBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const subject = 'Inquiry from AishNar Website';
+                const body = 'Hi AishNar Team,%0D%0A%0D%0AI am interested in learning more about your services and would like to discuss potential collaboration opportunities.%0D%0A%0D%0APlease get back to me at your earliest convenience.%0D%0A%0D%0AThank you!';
+                window.open(`mailto:aishnar.official@gmail.com?subject=${subject}&body=${body}`, '_blank');
+            });
+        }
+
+        // Main WhatsApp contact button
+        const whatsappContactMainBtn = document.getElementById('whatsapp-contact-main');
+        if (whatsappContactMainBtn) {
+            whatsappContactMainBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const message = 'Hi AishNar Team! 👋 I am interested in learning more about your services and would like to discuss potential collaboration opportunities. Please get back to me at your earliest convenience. Thank you!';
+                window.open(`https://wa.me/919157255093?text=${encodeURIComponent(message)}`, '_blank');
+            });
+        }
+
+        // Newsletter popup button
+        const newsletterPopupBtn = document.getElementById('newsletter-popup-btn');
+        if (newsletterPopupBtn) {
+            newsletterPopupBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const subject = 'Newsletter Subscription Request';
+                const body = 'Hi AishNar Team,%0D%0A%0D%0AI would like to subscribe to your newsletter to stay updated about new ventures and exclusive content.%0D%0A%0D%0APlease add me to your mailing list.%0D%0A%0D%0AThank you!';
+                window.open(`mailto:aishnar.official@gmail.com?subject=${subject}&body=${body}`, '_blank');
+            });
+        }
+
+        // Contact Digital button
+        const contactDigitalBtn = document.getElementById('contact-digital-btn');
+        if (contactDigitalBtn) {
+            contactDigitalBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const message = 'Hi AishNar Digital Team! I am interested in your digital services. Could you please provide me with more information about your offerings and pricing? Thank you!';
+                window.open(`https://wa.me/919157255093?text=${encodeURIComponent(message)}`, '_blank');
+            });
+        }
+
+        // Footer newsletter subscription
+        const footerSubscribeBtn = document.getElementById('footer-subscribe-btn');
+        if (footerSubscribeBtn) {
+            footerSubscribeBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const subject = 'Newsletter Subscription Request';
+                const body = 'Hi AishNar Team,%0D%0A%0D%0AI would like to subscribe to your newsletter.%0D%0A%0D%0APlease add me to your mailing list.%0D%0A%0D%0AThank you!';
+                window.open(`mailto:aishnar.official@gmail.com?subject=${subject}&body=${body}`, '_blank');
+            });
+        }
+
+        // Notify Me buttons functionality
+        document.querySelectorAll('.notify-btn').forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                const ventureCard = this.closest('.card-hover');
+                const ventureName = ventureCard.querySelector('h3').textContent;
+
+                const email = prompt(`Enter your email to get notified when ${ventureName} launches:`);
+                if (email && email.includes('@')) {
+                    const originalText = this.textContent;
+                    this.textContent = 'Registering...';
+                    this.disabled = true;
+
+                    setTimeout(() => {
+                        alert(`Great! We'll notify you at ${email} as soon as ${ventureName} is ready to launch.`);
+                        this.textContent = originalText;
+                        this.disabled = false;
+                    }, 1000);
+                } else if (email) {
+                    alert('Please enter a valid email address.');
+                }
+            });
+        });
+
+        // Hero buttons functionality
+        const exploreDigitalBtn = document.getElementById('explore-digital-btn');
+        if (exploreDigitalBtn) {
+            exploreDigitalBtn.addEventListener('click', function () {
+                document.getElementById('ventures').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        }
+
+        const missionBtn = document.getElementById('mission-btn');
+        if (missionBtn) {
+            missionBtn.addEventListener('click', function () {
+                document.getElementById('about').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        }
+
+        // Explore Now button functionality
+        const exploreNowBtn = document.getElementById('explore-now-btn');
+        if (exploreNowBtn) {
+            exploreNowBtn.addEventListener('click', function () {
+                alert('AishNar Digital services coming soon! We\'ll redirect you to our digital services page once it\'s ready.');
+            });
+        }
+
+        // Main Digital button functionality
+
+        // Contact Digital Main button functionality
+        const contactDigitalMainBtn = document.getElementById('contact-digital-main-btn');
+        if (contactDigitalMainBtn) {
+            contactDigitalMainBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const message = 'Hi AishNar Digital Team! 🚀 I am interested in your digital services and would like to get a quote. Could you please provide me with more information about your offerings, pricing, and how we can work together? Thank you!';
+                window.open(`https://wa.me/919157255093?text=${encodeURIComponent(message)}`, '_blank');
+            });
+        }
+
+        // Responsive design handler
+        function handleResize() {
+            // Close mobile menu on tablet/desktop (768px and above)
+            if (window.innerWidth >= 768 && mobileMenu && mobileMenu.classList.contains('open')) {
+                closeMobileMenu();
+            }
+
+            // Debug log for testing
+            console.log('Screen width:', window.innerWidth, 'Menu visible:', window.innerWidth >= 768);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add loading animation to buttons
+            document.querySelectorAll('button').forEach(button => {
+                button.addEventListener('click', function () {
+                    if (!this.disabled) {
+                        this.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            this.style.transform = '';
+                        }, 150);
+                    }
+                });
+            });
+
+            // Add hover effects to cards
+            document.querySelectorAll('.card-hover').forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-5px)';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = '';
+                });
+            });
+
+            // Animate elements on scroll
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.section-fade');
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Run once on load
+        });
+
+        // Add touch support for mobile
+        if ('ontouchstart' in window) {
+            document.body.classList.add('touch-device');
+        }
+
+        // Performance optimization: Debounce scroll events
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Scroll progress bar
+        function updateScrollProgress() {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            const progressBar = document.getElementById('scroll-progress');
+            if (progressBar) {
+                progressBar.style.width = scrollPercent + '%';
+            }
+        }
+
+        // Optimized scroll handler
+        const optimizedScrollHandler = debounce(() => {
+            updateScrollProgress();
+        }, 10);
+
+        window.addEventListener('scroll', optimizedScrollHandler);
+
+        // Initialize scroll progress
+        updateScrollProgress();
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'962a25f0331a3a1e',t:'MTc1MzA5NTE0MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
+apps-fileview.texmex_20250724.00_p2
+index (2).html
+Displaying index (2).html.
